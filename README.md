@@ -1,6 +1,6 @@
-# MyApp
+#My App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19. But then updated to version 9.0.4.
 
 ## Development server
 
