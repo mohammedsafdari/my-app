@@ -1,0 +1,20 @@
+<h1>Product Management</h1>
+<hr>
+<table class="table table-striped table-responsive table-bordered">
+    <tr>
+        <th><button class="btn btn-default" (click)="imageFunction()">{{imageButton}}</button></th>
+        <th>Product Name</th>
+        <th>Product Code</th>
+        <th>Release Date</th>
+        <th>Price</th>
+        <th>Rating</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td><img [src] = "product.imageUrl" *ngIf = "imageBool" width="60px" height="30px"></td>
+        <td>{{product.productName | uppercase}}</td>
+        <td>{{product.productCode | lowercase}}</td>
+        <td>{{product.releaseDate }}</td>
+        <td>{{product.price | currency: 'INR' : 'symbol' }}</td>
+        <td>{{product.starRating}}</td>
+    </tr>
+</table>
